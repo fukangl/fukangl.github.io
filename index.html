@@ -40,7 +40,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/avatar_2.png" target="_blank"><img style="width:100%;max-width:100%" alt="Profile Photo" src="images/avatar_2.png" class="hoverZoomLink"></a>
+              <a href="images/fukangl.png" target="_blank"><img style="width:100%;max-width:100%" alt="Profile Photo" src="images/fukangl.png" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -66,7 +66,9 @@
 
            <heading> Publications </heading>
 
-           <tr onmouseout="D_stop()" onmouseover="D_start()">
+           
+	<!--R-AL with IROS 2022 -->
+	     <tr onmouseout="D_stop()" onmouseover="D_start()">
              <td style="padding:20px;width:25%;vertical-align:middle">
                <div id='D_blurry' class='hidden'><img src="images/IROS-bathing.png"  width="160"></div>
                <div id='D_sharp'>
@@ -92,7 +94,7 @@
               <br>
               <strong> F. Liu</strong>, V. Patil, Z. Erickson, and Z. Temel
               <br>
-              <em>arXiv Preprint</em>, 2021 
+              <em>arXiv Preprint</em>, 2022 
               <br>
               <a href="https://arxiv.org/pdf/2202.13008.pdf" target="_blank">PDF</a> 
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> -->
@@ -101,51 +103,46 @@
             </td>
            </tr>
 
- 
-         
-        
-         
+	<!--T-RO multimodal grasping -->
+	     <tr onmouseout="D_stop()" onmouseover="D_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='D_blurry' class='hidden'><img src="images/TRO-grasping"  width="160"></div>
+               <div id='D_sharp'>
+                 <a href="images/www/tailoring.png"><img src="images/TRO-grasping"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function D_start() {
+                   document.getElementById('D_blurry').style.display = 'inline';
+                   document.getElementById('D_sharp').style.display = 'none';
+                 }
 
-
-          <!-- <tr onmouseout="loss_stop()" onmouseover="loss_start()" bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='loss_image'><img src='images/loss_after.jpg'></div>
-                <img src='images/loss_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function loss_start() {
-                  document.getElementById('loss_image').style.opacity = "1";
-                }
-
-                function loss_stop() {
-                  document.getElementById('loss_image').style.opacity = "0";
-                }
-                loss_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://drive.google.com/open?id=1xpZ0fL9h1y9RfcTyPgVkxUrF3VwdkBvq">
-                <papertitle>A General and Adaptive Robust Loss Function</papertitle>
+                 function D_stop() {
+                   document.getElementById('D_blurry').style.display = 'none';
+                   document.getElementById('D_sharp').style.display = 'inline';
+                 }
+                 D_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2202.12796.pdf" target="_blank">
+                <papertitle> Hybrid Robotic Grasping with a Soft Multimodal Gripper and a Deep Multistage Learning Scheme </papertitle>
               </a>
               <br>
-              <strong>Jonathan T. Barron</strong>
+              <strong> F. Liu</strong>, B. Fang, F. Sun, X. Li, S. Sun, and H. Liu
               <br>
-              <em>CVPR</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Award Finalist)</strong></font>
+              <em>arXiv Preprint</em>, 2022
               <br>
-              <a href="https://arxiv.org/abs/1701.03077">arxiv</a> /
-              <a href="https://drive.google.com/open?id=1HNveL7xSNh6Ss7sxLK8Mw2L1Fc-rRhL4">supplement</a> /
-              <a href="https://youtu.be/BmNKbnF69eY">video</a> /
-              <a href="https://www.youtube.com/watch?v=4IInDT_S0ow&t=37m22s">talk</a> / 
-              <a href="https://drive.google.com/file/d/1GzRYRIfLHvNLT_QwjHoBjHkBbs3Nbf0x/view?usp=sharing">slides</a> / 
-              <a href="https://github.com/google-research/google-research/tree/master/robust_loss">tensorflow code</a> /
-              <a href="https://github.com/jonbarron/robust_loss_pytorch">pytorch code</a> /
-              <a href="data/BarronCVPR2019_reviews.txt">reviews</a> /
-              <a href="data/BarronCVPR2019.bib">bibtex</a>
+              <a href="https://arxiv.org/pdf/2202.12796.pdf" target="_blank">PDF</a> 
+              <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> -->
               <p></p>
-              <p>A single robust loss function is a superset of many other common robust loss functions, and allows training to automatically adapt the robustness of its own loss.</p>
+              <!-- <p>Encoding inductive biases by optimizing unsupervised objectives at prediction time.</p> -->
             </td>
-          </tr> -->
+           </tr>		
+		
+ 
+         
+		
+         
 
         </tbody></table> 
 
