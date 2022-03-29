@@ -63,86 +63,43 @@
         <!--PUBLICATIONS -->
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading><font size="5">Publications</font></heading>
-            </td>
-          </tr>
-        </tbody></table>
 
-        <script>
-          function myFunction(pub_name) {
-              var x = document.getElementById(pub_name);
-              if (x.style.display === 'none') {
-                  x.style.display = 'block';
-              } else {
-                  x.style.display = 'none';
-              }
-        }
-        </script>
+           <heading> Publications </heading>
 
+           <tr onmouseout="D_stop()" onmouseover="D_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='D_blurry' class='hidden'><img src="images/IROS-bathing.png"  width="160"></div>
+               <div id='D_sharp'>
+                 <a href="images/www/tailoring.png"><img src="images/IROS-bathing.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function D_start() {
+                   document.getElementById('D_blurry').style.display = 'inline';
+                   document.getElementById('D_sharp').style.display = 'none';
+                 }
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-
-
-          <!-- ICIP 2020 - POSE ESTIMATION -->
-          <tr onmouseout="icip20_0_stop()" onmouseover="icip20_0_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='icip20_0_image'><img src='images/Pub-icip20_pose_re.jpg'></div>
-                <img src='images/Pub-icip20_pose_re.jpg'>
-              </div>
-              <script type="text/javascript">
-                function icip20_0_start() {
-                  document.getElementById('icip20_0_image').style.opacity = "1";
-                }
-
-                function icip20_0_stop() {
-                  document.getElementById('icip20_0_image').style.opacity = "0";
-                }
-                icip20_0_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://ieeexplore.ieee.org/document/9191147" target="_blank">
-                <papertitle><font size="3">An End-To-End Framework For Pose Estimation of Occluded Pedestrians</font></papertitle>
+                 function D_stop() {
+                   document.getElementById('D_blurry').style.display = 'none';
+                   document.getElementById('D_sharp').style.display = 'inline';
+                 }
+                 D_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2202.13008.pdf" target="_blank">
+                <papertitle> Characterization of a Meso-Scale Wearable Robot for Bathing Assistance </papertitle>
               </a>
               <br>
-              <font size="3">
-              <a href="https://sudip.info/" target="_blank"><font size="3">Sudip Das*</font></a>, 
-              <strong><font size="3">Perla Sai Raj Kishore*</font></strong>,
-              <a href="https://www.isical.ac.in/~ujjwal/" target="_blank"><font size="3">Ujjwal Bhattacharya</font></a>
+              <strong> F. Liu</strong>, V. Patil, Z. Erickson, and Z. Temel
               <br>
-              <em>International Conference on Image Processing (ICIP)</em>, 2020
-              </font>
+              <em>arXiv Preprint</em>, 2021 
               <br>
+              <a href="https://arxiv.org/pdf/2202.13008.pdf" target="_blank">PDF</a> 
+              <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> -->
               <p></p>
-              <a href="javascript:void(0);" onclick="myFunction('icip20_0_abs')"><font size="3">Abstract</font></a> /
-              <!-- <a href="https://arxiv.org/abs/1811.01401" target="_blank"><font size="3">arXiv</font></a> / -->
-              <a href="javascript:void(0);" onclick="myFunction('icip20_0_bib')"><font size="3">BibTex</font></a>
-              <p></p>
-              <div id="icip20_0_abs" style="display:none; text-align:justify;min-width:350px;"><font size="3">
-                <em>
-                  Pose estimation in the wild is a challenging problem, particularly in situations of(i) occlusions of varying degrees, and (ii) crowded outdoor scenes. Most of the existing studies of pose estimation did not report the performance in similar situations. Moreover, pose annotations for occluded parts of the human figures have not been provided in any of the relevant standard datasets, which in turn creates further difficulties to the required studies for pose estimation of the entire Figure for occluded humans. Well known pedestrian detection datasets such as CityPersons contains samples of outdoor scenes but it does not include pose annotations. Here we propose a novel multi-task framework for end-to-end training towards the entire pose estimation of pedestrians including in situations of any kind of occlusion. To tackle this problem, we make use of a pose estimation dataset, MS-COCO, and employ unsupervised adversarial instance-level domain adaptation for estimating the entire pose of occluded pedestrians. The experimental studies show that the proposed framework outperforms the SOTA results for pose estimation, instance segmentation and pedestrian detection in cases of heavy occlusions (HO) and reasonable + heavy occlusions (R+HO) on the two benchmark datasets.
-                </em>
-              </font></div>
-              <div id="icip20_0_bib" style="font-family:Courier;display:none;min-width:350px;"><font size="2">
-                <br>
-                @INPROCEEDINGS{9191147,<br>
-                  &emsp;author={S. {Das} and P. S. R. {Kishore} and U. {Bhattacharya}},<br>
-                  &emsp;booktitle={2020 IEEE International Conference on Image Processing (ICIP)},<br> 
-                  &emsp;title={An End-To-End Framework For Pose Estimation Of Occluded Pedestrians},<br> 
-                  &emsp;year={2020},<br>
-                  &emsp;volume={},<br>
-                  &emsp;number={},<br>
-                  &emsp;pages={1446-1450},<br>
-                  &emsp;doi={10.1109/ICIP40778.2020.9191147}<br>
-                }
-              </font></div>
+              <!-- <p>Encoding inductive biases by optimizing unsupervised objectives at prediction time.</p> -->
             </td>
-          </tr>
+           </tr>
 
  
          
