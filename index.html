@@ -35,7 +35,7 @@
 		and <a href="https://scholar.google.com/citations?user=DbviELoAAAAJ&hl=en" target="_blank">Fuchun Sun</a>,
 	      	and began my journey in robotics. 
 		I hold a Master's degree from Carnegie Mellon University and Tsinghua University. 
-		I obtained my Bachelor's degree (with Honors) from <a href="https://en.tongji.edu.cn/p/#/" target="_blank">Tongji University</a>.
+		I obtained my Bachelor's degree (with Honors) in Mechanics from <a href="https://en.tongji.edu.cn/p/#/" target="_blank">Tongji University</a>.
 		</p>
           
  	<p style="text-align:left">     
@@ -91,7 +91,55 @@
 	      
 	      
 	
+	<!-- opt2skill -->
+	<tr onmouseout="opt2skill_stop()" onmouseover="opt2skill_start()">
+	<td style="padding:20px;width:25%;vertical-align:middle">
+	<div id='opt2skill_blurry' class='hidden'><img src="data/opt2skill.gif"  width="160"></div>
+	<div id='opt2skill_sharp'>
+	<a href="data/robot-assited-bathing.gif"><img src="data/opt2skill.gif"  width="160"></a>
+	</div>
+	<script type="text/javascript">
+	function opt2skill_start() {
+		document.getElementById('opt2skill_blurry').style.display = 'inline';
+		document.getElementById('opt2skill_sharp').style.display = 'none';
+		}
 
+	function opt2skill_stop() {
+		document.getElementById('opt2skill_blurry').style.display = 'none';
+		document.getElementById('opt2skill_sharp').style.display = 'inline';
+                }
+                opt2skill_stop()
+	</script>
+	</td>
+	<td style="padding:20px;width:75%;vertical-align:middle">
+	<a href="https://arxiv.org/abs/2409.20514" target="_blank">
+	<papertitle> Opt2Skill: Imitating Dynamically-feasible Whole-Body Trajectories for Versatile Humanoid Loco-Manipulation </papertitle>
+	</a>
+	<br>
+	<strong> Fukang Liu</strong>, 
+	<a href="https://guzhaoyuan.com/" target="_blank">Zhaoyuan Gu</a>, 
+	<a href="https://missinglight.github.io/" target="_blank">Yilin Cai</a>, 
+	<a href="https://ziyi-zhou.github.io/" target="_blank">Ziyi Zhou</a>,
+	<a href="https://opt2skill.github.io/" target="_blank">Shijie Zhao</a>,
+	<a href="https://hyunyoungjung.github.io/" target="_blank">Hyunyoung Jung</a>,
+	<a href="https://faculty.cc.gatech.edu/~sha9/" target="_blank">Sehoon Ha</a>, 
+	<a href="https://research.gatech.edu/people/yue-chen" target="_blank">Yue Chen</a>, 
+	<a href="https://faculty.cc.gatech.edu/~danfei/" target="_blank">Danfei Xu<sup>†</sup></a>,
+	<a href="https://research.gatech.edu/people/ye-zhao" target="_blank">Ye Zhao<sup>†</sup></a>
+	<br>
+	arXiv preprint
+        <br>
+	<a href="https://arxiv.org/pdf/2409.20514" target="_blank">paper</a> |  
+	<a href="https://opt2skill.github.io/" target="_blank">project page</a>
+	<p></p>
+	</td>
+	</tr>
+	
+	  
+	  
+	  
+	  
+	  
 	<!--R-AL robot-assisted bathing -->
 	<tr onmouseout="E_stop()" onmouseover="E_start()">
 	<td style="padding:20px;width:25%;vertical-align:middle">
