@@ -23,7 +23,8 @@
 		<a href="https://faculty.cc.gatech.edu/~danfei/" target="_blank">Danfei Xu</a>.
               	I was supported by the IRIM PhD Fellowship.
 		My research focuses on physically grounded learning for humanoid loco-manipulation, 
-		combining model-based trajectory optimization with learning-based methods.
+		combining model-based trajectory optimization with learning-based methods. 
+		I am currently a research scientist intern at Meta.
 		</p>
 		<p>
 		Previously, I was fortunate to work with <a href="https://zackory.com/" target="_blank">Zackory Erickson</a> 
@@ -59,6 +60,7 @@
          <td style="padding:20px;width:100%;vertical-align:middle">
          <heading>News</heading>
          <p>
+		<li> [2026/05] Started as a research scientist intern at Meta. </li>
 		<li> [2025/09] Our <a href="https://opt2skill.github.io/" target="_blank">Opt2Skill</a> paper accepted to RA-L. </li>
 		<li> [2025/06] Our <a href="https://sites.google.com/view/softbathing" target="_blank">SkinGrip</a> paper accepted to IROS 2025. </li>
 		<li> [2025/04] I passed my Ph.D. qualifying exam. </li>
@@ -123,7 +125,43 @@
         <!--<heading> Publications </heading>-->
         </tr>     
 	      
-	      
+	
+		
+	<!-- Refine-dp -->
+	<tr onmouseout="refinedp_stop()" onmouseover="refinedp_start()">
+	<td style="padding:20px;width:25%;vertical-align:middle">
+	<div id='refinedp_blurry' class='hidden'><img src="data/refinedp_coverpage.gif"  width="160"></div>
+	<div id='refinedp_sharp'>
+	<a href="data/refinedp_coverpage.gif"><img src="data/refinedp_coverpage.gif"  width="160"></a>
+	</div>
+	<script type="text/javascript">
+	function refinedp_start() {
+		document.getElementById('refinedp_blurry').style.display = 'inline';
+		document.getElementById('refinedp_sharp').style.display = 'none';
+		}
+
+	function refinedp_stop() {
+		document.getElementById('refinedp_blurry').style.display = 'none';
+		document.getElementById('refinedp_sharp').style.display = 'inline';
+                }
+                refinedp_stop()
+	</script>
+	</td>
+	<td style="padding:20px;width:75%;vertical-align:middle">
+	<a href="https://arxiv.org/abs/2603.13707" target="_blank">
+	<papertitle> REFINE-DP: Diffusion Policy Fine-tuning for Humanoid Loco-manipulation via Reinforcement Learning </papertitle>
+	</a>
+	<br>
+	<a href="https://guzhaoyuan.com/" target="_blank">Zhaoyuan Gu</a>, et al.
+	<br>
+	Under review
+        <br>
+	<a href="https://arxiv.org/pdf/2603.13707" target="_blank">paper</a> |  
+	<a href="https://refine-dp.github.io/REFINE-DP/" target="_blank">website</a>
+	<p></p>
+	</td>
+	</tr>
+
 	
 	<!-- opt2skill -->
 	<tr onmouseout="opt2skill_stop()" onmouseover="opt2skill_start()">
