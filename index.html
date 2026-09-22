@@ -11,20 +11,21 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table class="bio" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center"><name>Fukang Liu</name></p>
               <p>
-              	I am a PhD candidate in Robotics at the Georgia Institute of Technology, where I'm fortunate to be advised by <a href="https://www.me.gatech.edu/faculty/zhao" target="_blank">Ye Zhao</a> and 
-		<a href="https://faculty.cc.gatech.edu/~danfei/" target="_blank">Danfei Xu</a>.
+                I am a PhD candidate in Robotics at the Georgia Institute of Technology, where I am advised by <a href="https://faculty.cc.gatech.edu/~zk15/" target="_blank" rel="noopener noreferrer">Zsolt Kira</a> and
+		<a href="https://faculty.cc.gatech.edu/~danfei/" target="_blank">Danfei Xu</a>. I also work closely with <a href="https://www.me.gatech.edu/faculty/zhao" target="_blank" rel="noopener noreferrer">Ye Zhao</a>.
               	I was supported by the IRIM PhD Fellowship.
-		My research focuses on physically grounded learning for humanoid loco-manipulation, 
-		combining model-based trajectory optimization with learning-based methods. 
-		I am currently a research scientist intern at Meta.
+		My research focuses on physically grounded robot learning, 
+		with an emphasis on humanoid systems and physical interaction. 
+		I study how learning and physical models can enable reliable and versatile interaction with the physical world.
+		I am currently a part-time student researcher at Meta.
 		</p>
 		<p>
 		Previously, I was fortunate to work with <a href="https://zackory.com/" target="_blank">Zackory Erickson</a> 
@@ -43,6 +44,7 @@
  	<p style="text-align:left">     
                 <a href="https://scholar.google.com/citations?hl=en&user=8B8iJW4AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a> &nbsp;&nbsp;&middot;&nbsp;&nbsp;               
 		<a href="https://github.com/fukangl/" target="_blank">Github</a> &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+		<a href="https://www.linkedin.com/in/fukang-liu-b3273826b/" target="_blank">LinkedIn</a> &nbsp;&nbsp;&middot;&nbsp;&nbsp;
 		<a href="https://x.com/fukangliuu" target="_blank">Twitter</a>
 		<br> Email: fukangliu[at]gatech[dot]edu
         </p>
@@ -60,13 +62,14 @@
          <td style="padding:20px;width:100%;vertical-align:middle">
          <heading>News</heading>
          <p>
+		<li> [2026/09] Introducing <a href="https://opt2vla.github.io/" target="_blank" rel="noopener noreferrer">Opt2VLA</a>: force-aware vision-language-action for contact-rich humanoid whole-body manipulation. </li>
 		<li> [2026/05] Started as a research scientist intern at Meta. </li>
 		<li> [2025/09] Our <a href="https://opt2skill.github.io/" target="_blank">Opt2Skill</a> paper accepted to RA-L. </li>
 		<li> [2025/06] Our <a href="https://sites.google.com/view/softbathing" target="_blank">SkinGrip</a> paper accepted to IROS 2025. </li>
 		<li> [2025/04] I passed my Ph.D. qualifying exam. </li>
 		<li> [2023/04] I've been awarded the IRIM Fellowship. </li>
 		<li> [2023/01] Our <a href="https://arxiv.org/pdf/2202.12796.pdf" target="_blank">multimodal grasping</a> paper accepted to IEEE Transactions on Robotics (T-RO). </li>
-  	</p>
+         </p>
 	</td>
         </tr>
         </tbody></table>
@@ -76,33 +79,49 @@
 
         
 	<!-- Highlight Videos -->
-	<table style="width:100%; max-width:800px; border:0px; border-spacing:10px; border-collapse:separate; margin:auto;">
+	<table style="width:100%; max-width:900px; border:0px; border-spacing:10px; border-collapse:separate; margin:auto;">
 	<tr>
 		<td colspan="2" style="text-align:left">
 		<heading>Research</heading>
 		<p align="justify">
-		I work on physically grounded humanoid control and learning, with a focus on contact-rich loco-manipulation. 
-		My research explores how to combine model-based trajectory optimization with learning-based methods to generate dynamically feasible, 
-		force-aware behaviors for humanoid robots operating in real physical environments. 
-		I'm particularly interested in enabling reliable and safe humanoid autonomy by grounding learning and planning in physically consistent constraints, 
-		allowing structured physical knowledge to guide learning toward policies that transfer to real-world deployment.
-		<br><br>
+		I study how robots can acquire versatile whole-body skills and interact intelligently with the physical world. 
+		A central question in my research is how to connect high-level task understanding with the dynamics and constraints of physical interaction. 
+		My recent work takes a full-stack approach to this problem, 
+		from learning robust humanoid skills from dynamically feasible trajectories (Opt2Skill) to integrating vision-language-action policies with explicit force-aware interaction (Opt2VLA). 
+		More broadly, I am interested in physically grounded robot learning and autonomy, where learning is informed by contact, dynamics, and the physical consequences of action.
+
+
 	</p>
+        <p>If you're interested in my research or potential collaborations, please <a href="mailto:fukangliu@gatech.edu">drop me an email</a>.</p>
 		</td>
 	</tr>
 	
 	<tr>
-		<td style="width:50%"><video width="100%" autoplay muted loop playsinline style="border-radius:12px"><source src="data/videos/desk_object_manipulation.mp4" type="video/mp4"></video></td>
-		<td style="width:50%"><video width="100%" autoplay muted loop playsinline style="border-radius:12px"><source src="data/videos/shelf_object_manipulation_2.mp4" type="video/mp4"></video></td>
-	</tr>
-	<tr>
-		<td style="width:50%"><video width="100%" autoplay muted loop playsinline style="border-radius:12px"><source src="data/videos/pick_walk.mp4" type="video/mp4"></video></td>
-		<td style="width:50%"><video width="100%" autoplay muted loop playsinline style="border-radius:12px"><source src="data/videos/singgle_door_opening.mp4" type="video/mp4"></video></td>
+		<td colspan="2">
+          <div class="research-previews">
+            <figure>
+              <a href="https://opt2vla.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Opt2VLA project website">
+                <video width="1280" height="720" autoplay muted loop playsinline preload="none" poster="data/opt2vla_preview.jpg" aria-label="Opt2VLA opening film">
+                  <source data-src="data/videos/opt2vla_opening.mp4" type="video/mp4">
+                </video>
+              </a>
+              <!-- <figcaption><a href="https://opt2vla.github.io/" target="_blank" rel="noopener noreferrer"><strong>Opt2VLA</strong></a></figcaption> -->
+            </figure>
+            <figure>
+              <a href="https://opt2skill.github.io/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Opt2Skill project website">
+                <video width="1280" height="720" autoplay muted loop playsinline preload="none" poster="data/opt2skill_preview.jpg" aria-label="Opt2Skill humanoid demonstration">
+                  <source data-src="data/videos/opt2skill_demo.mp4" type="video/mp4">
+                </video>
+              </a>
+              <!-- <figcaption><a href="https://opt2skill.github.io/" target="_blank" rel="noopener noreferrer"><strong>Opt2Skill</strong></a></figcaption> -->
+            </figure>
+          </div>
+        </td>
 	</tr>
 	</table>
 	<br>
 	<br>
-	<br>      
+	<br>
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:-20px;"><tbody>
         <tr>
         <td style="padding-left:20px;padding-right:20px;width:100%;vertical-align:middle">
@@ -121,12 +140,33 @@
 	
 	      
 	      
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	<table class="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <!--<heading> Publications </heading>-->
         </tr>     
 	      
 	
 		
+        <!-- Opt2VLA -->
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <a href="https://opt2vla.github.io/" target="_blank" rel="noopener noreferrer">
+              <img src="data/opt2vla_preview.jpg" width="160" height="90" loading="lazy" alt="Opt2VLA: Digit picking up a box with commanded and measured contact-force visualization">
+            </a>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2609.23968" target="_blank" rel="noopener noreferrer"><papertitle>Opt2VLA: Force-Aware Vision-Language-Action for Contact-Rich Humanoid Whole-Body Manipulation</papertitle></a>
+            <br>
+            <strong>Fukang Liu*</strong>,
+            <a href="https://peterchenyipu.github.io/" target="_blank" rel="noopener noreferrer">Yipu Chen*</a>,
+            <a href="https://scholar.google.com/citations?user=fPNCtVQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Jaehwi Jang</a>,
+            <a href="https://faculty.cc.gatech.edu/~danfei/" target="_blank" rel="noopener noreferrer">Danfei Xu</a>,
+            <a href="https://faculty.cc.gatech.edu/~zk15/" target="_blank" rel="noopener noreferrer">Zsolt Kira</a>,
+            <a href="https://www.me.gatech.edu/faculty/zhao" target="_blank" rel="noopener noreferrer">Ye Zhao</a>
+            <br>Under review<br>
+			<a href="https://arxiv.org/pdf/2609.23968" target="_blank">paper</a> |
+            <a href="https://opt2vla.github.io/" target="_blank" rel="noopener noreferrer">website</a>
+          </td>
+        </tr>
 	<!-- Refine-dp -->
 	<tr onmouseout="refinedp_stop()" onmouseover="refinedp_start()">
 	<td style="padding:20px;width:25%;vertical-align:middle">
@@ -154,7 +194,7 @@
 	<br>
 	<a href="https://guzhaoyuan.com/" target="_blank">Zhaoyuan Gu</a>, et al.
 	<br>
-	Under review
+	IEEE Robotics and Automation Letters (RA-L) 2026
         <br>
 	<a href="https://arxiv.org/pdf/2603.13707" target="_blank">paper</a> |  
 	<a href="https://refine-dp.github.io/REFINE-DP/" target="_blank">website</a>
@@ -197,13 +237,12 @@
 	<a href="https://opt2skill.github.io/" target="_blank">Shijie Zhao</a>,
 	<a href="https://faculty.cc.gatech.edu/~sha9/" target="_blank">Sehoon Ha</a>, 
 	<a href="https://research.gatech.edu/people/yue-chen" target="_blank">Yue Chen</a>, 
-	<a href="https://faculty.cc.gatech.edu/~danfei/" target="_blank">Danfei Xu<sup>†</sup></a>,
-	<a href="https://research.gatech.edu/people/ye-zhao" target="_blank">Ye Zhao<sup>†</sup></a>
+	<a href="https://faculty.cc.gatech.edu/~danfei/" target="_blank">Danfei Xu</a>,
+	<a href="https://research.gatech.edu/people/ye-zhao" target="_blank">Ye Zhao</a>
 	<br>
 	IEEE Robotics and Automation Letters (RA-L) 2025
         <br>
 	<a href="https://arxiv.org/pdf/2409.20514" target="_blank">paper</a> |  
-<!-- 	<a href="https://www.youtube.com/watch?v=DRHfpCYXJfU">video</a> | -->
 	<a href="https://opt2skill.github.io/" target="_blank">website</a> |
 	<a href="#">code (releasing soon)</a>
 	<p></p>
@@ -417,7 +456,7 @@
          <td style="padding:20px;width:100%;vertical-align:middle">
          <heading>Academic Service</heading>
          <p>
-	<subheading>Reviewer: T-RO, RA-L, RSS, CoRL, ICRA, IROS, TMECH, RoboSoft, CASE </subheading>
+	<subheading>Reviewer: T-RO, RA-L, TMECH, RSS, CoRL, ICRA, IROS, Humanoids, RoboSoft, CASE </subheading>
 	 </p>
 	</td>
         </tr>
@@ -443,5 +482,31 @@
 </td>
 </tr>
 </table>
+<script>
+(() => {
+  const videos = Array.from(document.querySelectorAll('.research-previews video'));
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let paused = reducedMotion.matches;
+  const visible = new Set();
+  function sync() {
+    videos.forEach(video => {
+      if (paused || !visible.has(video)) { video.pause(); return; }
+      const source = video.querySelector('source');
+      if (!source.hasAttribute('src')) { source.src = source.dataset.src; video.load(); }
+      video.muted = true;
+      video.play().catch(() => {});
+    });
+  }
+  reducedMotion.addEventListener('change', event => { paused = event.matches; sync(); });
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => entry.isIntersecting ? visible.add(entry.target) : visible.delete(entry.target));
+      sync();
+    }, { threshold: 0.1 });
+    videos.forEach(video => observer.observe(video));
+  } else { videos.forEach(video => visible.add(video)); }
+  sync();
+})();
+</script>
 </body>
 </html>
