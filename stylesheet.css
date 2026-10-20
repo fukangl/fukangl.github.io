@@ -132,8 +132,8 @@ span.highlight {
 
 .research-previews {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
 }
 
 .research-previews figure { margin: 0; min-width: 0; }
@@ -141,17 +141,36 @@ span.highlight {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
   border-radius: 4px;
   background: #f1f1f1;
 }
-.research-previews figcaption { margin-top: 10px; line-height: 1.6; }
+.research-previews figcaption { margin-top: 8px; line-height: 1.6; text-align: center; }
 .research-previews a:focus-visible { outline: 2px solid #1772d0; outline-offset: 4px; }
-.publications img { max-width: 100%; height: auto; }
+.publications img,
+.publication-preview {
+  display: block;
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+  background: #f1f1f1;
+}
+
+/* Keep the camera mast and the box interaction visible in the taller source. */
+.publication-preview--opt2vla { object-position: center top; }
+.publications img[src="data/multimodal-grasping.gif"] { object-position: center 65%; }
+
+@media (max-width: 760px) {
+  .research-previews { grid-template-columns: minmax(0, 1fr); }
+}
 
 @media (max-width: 600px) {
-  .research-previews { grid-template-columns: minmax(0, 1fr); }
   .bio > tbody > tr { display: flex; flex-direction: column-reverse; }
   .bio > tbody > tr > td { box-sizing: border-box; width: 100% !important; max-width: 100% !important; padding: 16px !important; }
   .bio > tbody > tr > td:last-child { text-align: center; }
